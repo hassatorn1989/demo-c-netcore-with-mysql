@@ -1,0 +1,25 @@
+﻿@model DemoProductApp.Models.Product
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<dt class="row">
+    <dt class="col-sm-2">
+        Product Name
+    </dt>
+    <dd class="col-sm-10">
+        @Model.ProductName
+    </dd>
+</dt>
+<dt class="row">
+    <dt class="col-sm-2">
+        Product Price
+    </dt>
+    <dd class="col-sm-10">
+        @Model.ProductPrice
+    </dd>
+</dt>
+
+<a asp-action="Index">Back to List</a>
